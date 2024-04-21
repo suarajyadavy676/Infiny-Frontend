@@ -1,7 +1,7 @@
 import React from "react";
-import { GiHamburgerMenu } from "react-icons/gi";
 import { Link } from "react-router-dom";
 import { useState,useEffect } from "react";
+import Hamburger from "./Hamburger";
 
 function Navbar3() {
   const [isFixed, setIsFixed] = useState(false);
@@ -40,7 +40,7 @@ function Navbar3() {
       {/* medium to small */}
       <div className="w-[96%] mx-auto flex justify-between lg:hidden my-4">
       <Link to="/"><img src="./images/logo.png" alt="logo" width={170} /></Link>      
-        <GiHamburgerMenu />
+        <Hamburger/>
       </div>
     </div>
   );
