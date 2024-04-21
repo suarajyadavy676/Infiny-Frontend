@@ -5,7 +5,7 @@ function Footer() {
   
  
   return (
-    <div className="mb-10 mt-96">
+    <div className="my-20">
       <div className="grid gap-5 grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 justify-between w-[85%] mx-auto">
         <div>
           <h1 className="text-lg font-bold">PRODUCTS</h1>

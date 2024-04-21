@@ -9,7 +9,7 @@ function Navbar3() {
   // Function to check the scroll position
   const handleScroll = () => {
     const position = window.pageYOffset;
-    setIsFixed(position > 0); // Fixed when not at the top
+    setIsFixed(position > 90); // Fixed when not at the top
   };
 
   // Set up event listener for scrolling
