@@ -16,26 +16,21 @@ function Footer() {
             <Link to="#">Screen</Link>
           </p>
           <p className="hover:text-green-400">
-            {" "}
             <Link to="#">Interview</Link>
           </p>
           <p className="hover:text-green-400">
-            {" "}
             <Link to="#">Certified Assessmentss</Link>
           </p>
           <p className="hover:text-green-400">
-            {" "}
             <Link to="#">Plagiarism Detection</Link>
           </p>
           <p className="hover:text-green-400">
-            {" "}
             <Link to="#">Real World Questions</Link>
           </p>
         </div>
         <div>
           <h1 className="text-lg font-bold">SOLUTIONS</h1>
           <p className="hover:text-green-400">
-            {" "}
             <Link to="#">Set Up a Skills Strategy</Link>
           </p>
           <p className="hover:text-green-400">
@@ -45,38 +40,30 @@ function Footer() {
             <Link to="#">Optimize Your Hiring Process</Link>
           </p>
           <p className="hover:text-green-400">
-            {" "}
             <Link to="#">Mobilize Your Internal Talent</Link>
           </p>
           <p className="hover:text-green-400">
-            {" "}
             <Link to="#">Embrace AI</Link>
           </p>
         </div>
         <div>
           <h1 className="text-lg font-bold">RESOURCES</h1>
           <p className="hover:text-green-400">
-            {" "}
             <Link to="#">Blog</Link>
           </p>
           <p className="hover:text-green-400">
-            {" "}
             <Link to="#">Customer Stories</Link>
           </p>
           <p className="hover:text-green-400">
-            {" "}
             <Link to="#">Roles Directory</Link>
           </p>
           <p className="hover:text-green-400">
-            {" "}
             <Link to="#">Partners</Link>
           </p>
           <p className="hover:text-green-400">
-            {" "}
             <Link to="#">Integrations</Link>
           </p>
           <p className="hover:text-green-400">
-            {" "}
             <Link to="#">What’s New</Link>
           </p>
         </div>
@@ -141,7 +128,6 @@ function Footer() {
             <FaFacebook className="inline mx-2 text-2xl text-blue-900" />
           </Link>
           <Link to="#">
-            <FaSquareXTwitter className="inline mx-2 text-2xl" />{" "}
             <FaSquareXTwitter className="inline mx-2 text-2xl" />
           </Link>
           <Link to="#">
