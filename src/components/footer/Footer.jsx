@@ -70,50 +70,39 @@ function Footer() {
         <div>
           <h1 className="text-lg font-bold">ABOUT US</h1>
           <p className="hover:text-green-400">
-            {" "}
             <Link to="#">Careers</Link>
           </p>
           <p className="hover:text-green-400">
-            {" "}
             <Link to="#">Our Team</Link>
           </p>
           <p className="hover:text-green-400">
-            {" "}
             <Link to="#">Newsroom</Link>
           </p>
           <p className="hover:text-green-400">
-            {" "}
             <Link to="#">Status</Link>
           </p>
           <p className="hover:text-green-400">
-            {" "}
             <Link to="#">Trust</Link>
           </p>
         </div>
         <div>
           <h1 className="text-lg font-bold">GET STARTED</h1>
           <p className="hover:text-green-400">
-            {" "}
             <Link to="#">Pricing</Link>
           </p>
           <p className="hover:text-green-400">
-            {" "}
             <Link to="#">Free Trial</Link>
           </p>
           <p className="hover:text-green-400">
-            {" "}
             <Link to="#">Contact Us</Link>
           </p>
           <p className="hover:text-green-400">
-            {" "}
             <Link to="#">Request Demo</Link>
           </p>
           <p className="hover:text-green-400">
-            {" "}
             <Link to="#">Product Support</Link>
           </p>
           <p className="hover:text-green-400">
-            {" "}
             <Link to="#">For Developers</Link>
           </p>
         </div>
