@@ -38,7 +38,7 @@ function Navbar3() {
         </div>
       </div>
       {/* medium to small */}
-      <div className="w-[96%] mx-auto flex justify-between lg:hidden my-4">
+      <div className="w-[96%] mx-auto flex justify-between lg:hidden my-4 items-center">
       <Link to="/"><img src="./images/logo.png" alt="logo" width={170} /></Link>      
         <Hamburger/>
       </div>
