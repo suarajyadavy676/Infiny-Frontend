@@ -10,7 +10,7 @@ function SignUp() {
     e.preventDefault()
     console.log(userData)
     try {
-      let res = await axios.post("http://localhost:3000/user/register",userData)
+      let res = await axios.post("https://kanban-backend-production-b5bc.up.railway.app/user/register",userData)
       console.log(res)
       if(res.data == "user already present"){
       return setAlResData(res.data)
