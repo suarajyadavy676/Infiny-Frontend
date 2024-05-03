@@ -12,6 +12,7 @@ import {
 } from "@chakra-ui/react";
 import { GiHamburgerMenu } from "react-icons/gi";
 import { IoIosArrowRoundForward } from "react-icons/io";
+import { Link } from "react-router-dom";
 
 function Hamburger() {
   const { isOpen, onOpen, onClose } = useDisclosure();
@@ -42,9 +43,9 @@ function Hamburger() {
             <h1 className="my-6 text-lg">Pricing</h1>
             <h1 className="my-6 text-lg">For Candiadtes</h1>
             <h1 className="my-6 text-lg">Contact Us</h1>
-            <button className="w-[90%] mx-auto my-4 py-1 font-bold border-b-2">Login <IoIosArrowRoundForward className="inline text-2xl"/></button>
+            <button className="w-[90%] mx-auto my-4 py-1 font-bold border-b-2"> <Link to='/login'>Login </Link> <IoIosArrowRoundForward className="inline text-2xl"/></button>
             <button className="w-[90%] mx-auto bg-slate-200 my-4 py-1 font-bold">Request demo</button>
-            <button className="w-[90%] mx-auto my-4 bg-green-500 text-white font-bold">Sign up</button>
+            <button className="w-[90%] mx-auto my-4 bg-green-500 text-white font-bold"> <Link to="/register">Sign up</Link> </button>
           </DrawerBody>
 
           <DrawerFooter>

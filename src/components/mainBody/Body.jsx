@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 function Body() {
   return (
@@ -13,8 +14,8 @@ function Body() {
             candidates sharpen their tech skills and pursue job opportunities.
           </h1>
           <div className="mx-auto my-10 text-center">
-            <button className="bg-green-600 py-2 px-10 text-white rounded-md mx-20 my-10">
-              Sign Up
+            <button  className="bg-green-600 py-2 px-10 text-white rounded-md mx-20 my-10">
+              <Link to='/register'>Sign Up</Link>
             </button>
             <button className=" border-2 border-black px-6 py-1 rounded-md">
               Request demo

@@ -33,7 +33,7 @@ function Navbar3() {
           <p><Link to="/dashboard" className="hover:text-green-600">For developers</Link></p>
           <p><Link to="#">Request demo</Link></p>
           <button className="bg-green-700 px-4 py-2 rounded-md text-white">
-            <Link to="#">Sign Up</Link>
+            <Link to="/register">Sign Up</Link>
           </button>
         </div>
       </div>
