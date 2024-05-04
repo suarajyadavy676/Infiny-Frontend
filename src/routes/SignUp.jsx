@@ -4,7 +4,7 @@ import { useNavigate } from "react-router-dom";
 import { useToast } from "@chakra-ui/react";
 
 function SignUp() {
-  // console.log(import.meta.env.REACT_APP_API_URL)
+  console.log(`${import.meta.env.REACT_APP_API_URL}user/register`)
   const toast = useToast();
   let navigate = useNavigate();
   let [userData, setUserData] = useState({

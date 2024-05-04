@@ -4,6 +4,7 @@ import { useToast } from "@chakra-ui/react";
 
 function Login() {
   const toast = useToast();
+  console.log(`${import.meta.env.REACT_APP_API_URL}user/signIn`)
   let [loginData,setLoginData] = useState({password:"",email:""})
   const handleClick = async(e)=>{
     e.preventDefault()
