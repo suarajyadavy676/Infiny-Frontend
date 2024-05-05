@@ -4,6 +4,7 @@ import Footer from "./components/footer/Footer";
 import Navbar3 from "./components/navbar/Navbar3";
 import AllRoutes from "./routes/AllRoutes";
 function App() {
+  console.log("token",!localStorage.getItem('token'))
   return (
     <>
       <Navbar1 />

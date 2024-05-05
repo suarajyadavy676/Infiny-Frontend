@@ -1,9 +1,11 @@
 import axios from "axios";
 import React,{ useState } from "react";
 import { useToast } from "@chakra-ui/react";
+import { useNavigate } from "react-router-dom";
 
 function Login() {
   const toast = useToast();
+  let navigate = useNavigate()
   console.log(`${import.meta.env.REACT_APP_API_URL}user/signIn`)
   let [loginData,setLoginData] = useState({password:"",email:""})
   const handleClick = async(e)=>{
@@ -15,6 +17,7 @@ function Login() {
       // for production
       let res = await axios.post(`${import.meta.env.REACT_APP_API_URL}user/signIn`,loginData)
       console.log(res)
+      localStorage.setItem('token',res.data.token)
       setLoginData({password:"",email:""})
       toast({
         title: "Login Success",
@@ -23,6 +26,7 @@ function Login() {
         duration: 9000,
         isClosable: true,
       })
+      navigate('/dashboard')
     } catch (error) {
       console.log("error in login time")
     }
@@ -40,6 +44,7 @@ function Login() {
               name="email"
               id="email"
               value={loginData.email}
+              autoComplete="username"
               required
               onChange={(e)=>setLoginData({...loginData,email:e.target.value})}
               placeholder="@email"
@@ -55,6 +60,7 @@ function Login() {
               name="password"
               id="password"
               value={loginData.password}
+              autoComplete="current-password"
               required
               placeholder="@password"
               onChange={(e)=>setLoginData({...loginData,password:e.target.value})}
