@@ -10,7 +10,7 @@ function Navbar2() {
             Contact us
           </Link>{" "}
           |{" "}
-          <Link to="/login" className="hover:font-bold">
+          <Link to="/access-account" className="hover:font-bold">
             Log in
           </Link>
         </h1>

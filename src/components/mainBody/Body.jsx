@@ -2,6 +2,7 @@ import React from "react";
 import { Link } from "react-router-dom";
 
 function Body() {
+  localStorage.clear()
   return (
     <div>
       <div className="bg-gradient-to-r from-green-50 via-white to-blue-50">
