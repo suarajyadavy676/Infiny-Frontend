@@ -1,10 +1,12 @@
 import axios from "axios";
-import React, { useState } from "react";
+import React, { useContext, useState } from "react";
 import { useToast } from "@chakra-ui/react";
 import { useNavigate } from "react-router-dom";
 import { Helmet } from "react-helmet";
+import { AuthContext } from "../components/AuthContextProvider";
 
 function Login() {
+  let {setToken} = useContext(AuthContext)
   const toast = useToast();
   let navigate = useNavigate();
   console.log(`${import.meta.env.REACT_APP_API_URL}user/signIn`);
@@ -14,14 +16,15 @@ function Login() {
     console.log(loginData);
     try {
       //for development
-      let res = await axios.post("http://localhost:3000/user/signIn",loginData)
+      // let res = await axios.post("http://localhost:3000/user/signIn",loginData)
       // for production
-      // let res = await axios.post(
-      //   `${import.meta.env.REACT_APP_API_URL}user/signIn`,
-      //   loginData
-      // );
+      let res = await axios.post(
+        `${import.meta.env.REACT_APP_API_URL}user/signIn`,
+        loginData
+      );
       console.log(res);
       localStorage.setItem("token", res.data.token);
+      setToken(localStorage.getItem("token"))
       setLoginData({ password: "", email: "" });
       toast({
         title: "Login Success",
@@ -43,6 +46,7 @@ function Login() {
       </Helmet>
       <div className="">
         <div className="max-w-xl py-6 px-8 h-80 mt-20 bg-white rounded shadow-xl mx-auto">
+        
           <form method="POST" onSubmit={handleClick}>
             <div className="mb-6">
               <label htmlFor="name" className="block text-gray-800 font-bold">

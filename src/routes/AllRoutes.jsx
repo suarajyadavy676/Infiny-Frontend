@@ -23,6 +23,7 @@ function AllRoutes() {
         <Route path="/register" element={<SignUp />} />
         <Route path="/login" element={<Login />} />
         <Route path="/access-account" element={<AccessAccount/>}/>
+        <Route path="/dashboard/data-structures" element={<h1 className="text-center font-bold my-10">Data Structures Problem</h1>}/>
       </Routes>
     </div>
   );

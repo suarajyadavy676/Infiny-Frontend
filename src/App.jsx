@@ -3,9 +3,10 @@ import Navbar2 from "./components/navbar/Navbar2";
 import Footer from "./components/footer/Footer";
 import Navbar3 from "./components/navbar/Navbar3";
 import AllRoutes from "./routes/AllRoutes";
-import DevNavbar from "./routes/for-developrs/DevNavbar";
 import { AuthContext } from "./components/AuthContextProvider";
 import { useContext, useEffect } from "react";
+import DNavbar from "./routes/for-developrs/DNavbar";
+import DFooter from "./routes/for-developrs/DFooter";
 function App() {
   console.log("token",!localStorage.getItem('token'))
   let {token} = useContext(AuthContext)
@@ -16,7 +17,7 @@ function App() {
     <>
     {token
     ?
-    <DevNavbar/>
+    <DNavbar/>
     :
     (<>
       <Navbar1 />
@@ -25,7 +26,7 @@ function App() {
     </>)
     }
       <AllRoutes/>
-      {token?<h1>hello</h1>:<Footer />}     
+      {token?<DFooter/>:<Footer />}     
     </>
   );
 }

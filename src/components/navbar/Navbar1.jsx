@@ -4,10 +4,10 @@ import { FaAngleRight } from "react-icons/fa6";
 
 function Navbar1() {
   let arr = [
-    "HackerRank Launches Two New Products: SkillUp and Engage",
+    "INFINY SCHOOL Launches Two New Products: SkillUp and Engage",
     "SkillUp and Engage Read nowJoin us at the AI Skills & Tech Talent Summit in London! ",
     "Register nowThe 2024 Developer Skills Report is here",
-    "Read nowStream HackerRank AI Day",
+    "Read nowStream INFINY SCHOOOL AI Day",
     "featuring new innovations and industry thought leaders.",
   ];
 

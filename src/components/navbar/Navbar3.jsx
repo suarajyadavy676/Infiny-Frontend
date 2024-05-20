@@ -25,7 +25,8 @@ function Navbar3() {
       {/* lg screen */}
       <div className={`hidden lg:block `}>
         <div className="my-4 w-[95%] xl:w-5/6 mx-auto flex justify-between items-center text-md font-bold">
-        <Link to="/"><img src="./images/logo.png" alt="logo" width={170} /></Link>        
+        {/* <Link to="/"><img src="./images/logo.png" alt="logo" width={170} /></Link>         */}
+        <h1 className="font-extrabold text-xl"> <Link to="/">INFINY SCHOOL</Link></h1>
           <p><Link to="#">Products</Link></p>
           <p><Link to="#">Solutions</Link></p>
           <p><Link to="#">Resources</Link></p>
@@ -33,13 +34,14 @@ function Navbar3() {
           <p><Link to="/dashboard" className="hover:text-green-600">For developers</Link></p>
           <p><Link to="#">Request demo</Link></p>
           <button className="bg-green-700 px-4 py-2 rounded-md text-white">
-            <Link to="/register">Sign Up</Link>
+            <Link to="/access-account">Sign Up</Link>
           </button>
         </div>
       </div>
       {/* medium to small */}
       <div className="w-[96%] mx-auto flex justify-between lg:hidden my-4 items-center">
-      <Link to="/"><img src="./images/logo.png" alt="logo" width={170} /></Link>      
+      {/* <Link to="/"><img src="./images/logo.png" alt="logo" width={170} /></Link>       */}
+      <h1 className="font-extrabold text-xl"> <Link to="/">INFINY SCHOOL</Link></h1>
         <Hamburger/>
       </div>
     </div>
