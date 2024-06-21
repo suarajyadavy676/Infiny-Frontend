@@ -13,7 +13,7 @@ function DNavbar() {
         <div className="flex justify-between   text-white py-4 w-[90%] mx-auto">
           <div className="grid grid-cols-5 gap-3">
             <p className="text-xl shrink font-extrabold hover:underline hover:underline-offset-[16px] hover:decoration-green-500">
-              <Link to="#">INFINY SCHOOL</Link>
+              <Link to="/dashboard">INFINY SCHOOL</Link>
             </p>
             <p className="text-center hover:underline hover:underline-offset-[16px] hover:decoration-green-500 ">
               <Link to="#">Prepare</Link>

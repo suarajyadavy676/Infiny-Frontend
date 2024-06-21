@@ -3,8 +3,9 @@ import { Link } from "react-router-dom";
 import { Element, scroller } from 'react-scroll';
 import { QuestionOutlineIcon } from "@chakra-ui/icons";
 import { Tooltip } from "@chakra-ui/react";
+import DataStructure from "./data-structure/DataStructure";
 
-function Content() {
+function DashBoard() {
   const scrollToSection = (section) => {
     scroller.scrollTo(section, {
       duration: 800,
@@ -109,7 +110,7 @@ function Content() {
               <Link to="#">Java</Link>{" "}
             </p>
             <p className="py-3 text-lg hover:font-bold">
-              <Link to="#">Python</Link>{" "}
+              <Link to="/dashboard/python">Python</Link>{" "}
             </p>
             <p className="py-3 text-lg hover:font-bold">
               <Link to="#">Ruby</Link>{" "}
@@ -156,8 +157,9 @@ function Content() {
           </div>
         </div>
       </div>
+      <DataStructure/>
     </div>
   );
 }
 
-export default Content;
+export default DashBoard;
