@@ -19,16 +19,16 @@ function SignUp() {
     console.log(userData);
     try {
       //for development
-      let res = await axios.post(
-        "http://localhost:3000/user/register",
-        userData
-      );
-
-      // for production
       // let res = await axios.post(
-      //   `${import.meta.env.REACT_APP_API_URL}user/register`,
+      //   "http://localhost:3000/user/register",
       //   userData
       // );
+
+      // for production
+      let res = await axios.post(
+        `${import.meta.env.REACT_APP_API_URL}user/register`,
+        userData
+      );
       console.log(res);
       if (res.data == "user already present") {
         return setAlResData(res.data);
