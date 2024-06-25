@@ -26,7 +26,8 @@ function App() {
     </>)
     }
       <AllRoutes/>
-      {token?<DFooter/>:<Footer />}     
+      {token?<DFooter/>:<Footer />}
+           
     </>
   );
 }

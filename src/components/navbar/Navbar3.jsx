@@ -2,6 +2,9 @@ import React from "react";
 import { Link } from "react-router-dom";
 import { useState,useEffect } from "react";
 import Hamburger from "./Hamburger";
+import Products from "./Products";
+import Solutions from "./Solutions";
+import Resources from "./Resources";
 
 function Navbar3() {
   const [isFixed, setIsFixed] = useState(false);
@@ -27,9 +30,9 @@ function Navbar3() {
         <div className="my-4 w-[95%] xl:w-5/6 mx-auto flex justify-between items-center text-md font-bold">
         {/* <Link to="/"><img src="./images/logo.png" alt="logo" width={170} /></Link>         */}
         <h1 className="font-extrabold text-xl"> <Link to="/">INFINY SCHOOL</Link></h1>
-          <p><Link to="#">Products</Link></p>
-          <p><Link to="#">Solutions</Link></p>
-          <p><Link to="#">Resources</Link></p>
+          <p><Link to="#"><Products/></Link></p>
+          <p><Link to="#"><Solutions/></Link></p>
+          <p><Link to="#"><Resources/></Link></p>
           <p><Link to="#" className="hover:text-green-600">Pricing</Link></p>
           <p><Link to="/dashboard" className="hover:text-green-600">For developers</Link></p>
           <p><Link to="#">Request demo</Link></p>
