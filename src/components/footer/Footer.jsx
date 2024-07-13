@@ -127,7 +127,7 @@ function Footer() {
           </a>
         </div>
         <h1>
-          Copyright © 2024 HackerRank DBA INTERVIEW STREET TECHNOLOGIES PRIVATE
+          Copyright © 2024 Infiny School DBA INTERVIEW STREET TECHNOLOGIES PRIVATE
           LIMITED
         </h1>
         <p>
