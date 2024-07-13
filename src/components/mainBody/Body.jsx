@@ -22,8 +22,8 @@ function Body() {
               Request demo
             </button>
           </div>
-          <h1 className="xl:w-[40%] mx-auto text-lg">
-            Over 40% of developers worldwide and 3,000 companies use HackerRank
+          <h1 className="xl:w-[50%] mx-auto text-lg">
+            Over 40% of developers worldwide and 3,000 companies use INFINY SCHOOL
           </h1>
           <div className="flex justify-between flex-wrap xl:w-[60%] mx-auto">
             <img src="/images/peloton.png" alt="logo" width={100} />

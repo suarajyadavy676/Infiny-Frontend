@@ -103,16 +103,13 @@ function Footer() {
             <Link to="#">Product Support</Link>
           </p>
           <p className="hover:text-green-400">
-            <Link to="#">For Developers</Link>
+            <Link to="/dashboard">For Developers</Link>
           </p>
         </div>
       </div>
 
       <div className="text-center mt-10">
         <div className="my-2">
-          <Link to="#">
-            <SiHackerrank className="inline mx-2 text-4xl" />
-          </Link>
           <Link to="#">
             <FaFacebook className="inline mx-2 text-2xl text-blue-900" />
           </Link>
@@ -122,12 +119,12 @@ function Footer() {
           <Link to="#">
             <FaSquareInstagram className="inline mx-2 text-2xl text-red-500" />
           </Link>
-          <Link to="#">
+          <a href="https://www.linkedin.com/company/infiny-school/" target="_blank">
             <FaLinkedin className="inline mx-2 text-2xl text-blue-700" />
-          </Link>
-          <Link to="#">
+          </a>
+          <a href="https://t.me/infinytech" target="https://t.me/infinytech">
             <FaTelegram className="inline mx-2 text-2xl text-blue-500" />
-          </Link>
+          </a>
         </div>
         <h1>
           Copyright © 2024 HackerRank DBA INTERVIEW STREET TECHNOLOGIES PRIVATE

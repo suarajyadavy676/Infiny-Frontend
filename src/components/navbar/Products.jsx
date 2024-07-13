@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { Menu, MenuButton, MenuList, MenuItem, Box } from "@chakra-ui/react";
+import { Menu, MenuButton, MenuList, Box } from "@chakra-ui/react";
 
 function Products() {
   const [isOpen, setIsOpen] = useState(false);

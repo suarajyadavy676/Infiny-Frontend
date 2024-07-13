@@ -32,7 +32,7 @@ function Hamburger() {
         <DrawerContent>
           <DrawerCloseButton />
           <DrawerHeader>
-            <img className="mx-auto" src="/images/logo.png" alt="logo" width={150} />
+            <img className="mx-auto" src="/infiny.jpg" alt="logo" width={60} />
           </DrawerHeader>
 
           <DrawerBody>
