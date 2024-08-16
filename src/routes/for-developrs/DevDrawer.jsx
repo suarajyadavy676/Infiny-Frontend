@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useContext, useRef } from "react";
 import {
   Drawer,
   DrawerBody,
@@ -10,10 +10,24 @@ import {
   useDisclosure,
 } from "@chakra-ui/react";
 import { GiHamburgerMenu } from "react-icons/gi";
+import { useNavigate } from "react-router-dom";
+import { AuthContext } from "../../components/AuthContextProvider";
 
 function DevDrawer() {
   const { isOpen, onOpen, onClose } = useDisclosure();
-  const btnRef = React.useRef();
+  const btnRef = useRef();
+  let navigate = useNavigate();
+  const { setToken } = useContext(AuthContext);
+  function handleClick() {
+    // Clear local storage
+    localStorage.clear();
+
+    // Clear authentication context state
+    setToken(null); // or use a function to clear the context state
+
+    // Navigate to the home page or login page
+    navigate("/");
+  }
 
   return (
     <>
@@ -42,7 +56,7 @@ function DevDrawer() {
             <p className="my-4 text-lg hover:font-bold cursor-pointer">Leaderboard</p>
             <p className="my-4 text-lg hover:font-bold cursor-pointer">Bookmarks</p>
             <p className="my-4 text-lg hover:font-bold cursor-pointer">Setting</p>
-            <p className="my-4 text-lg hover:font-bold cursor-pointer">Logout</p>
+            <p className="my-4 text-lg hover:font-bold cursor-pointer" onClick={handleClick}>Logout</p>
           </DrawerBody>
 
           <DrawerFooter>
