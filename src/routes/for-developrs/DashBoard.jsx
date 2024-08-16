@@ -86,7 +86,7 @@ function DashBoard() {
             </div>
           </div>
 
-          <h2 className="pt-10 text-lg font-bold" name="skills">Prepare By Topics</h2>
+          <h2 className="pt-32 text-lg font-bold" name="skills">Prepare By Topics</h2>
           <div className="bg-white text-black grid grid-cols-1 md:grid-cols-3 pl-10 mt-4 py-4 rounded-lg shadow-lg">
             <p className="py-3 text-lg hover:font-bold">
               <Link to="#">Algorithms</Link>{" "}

@@ -1,5 +1,5 @@
-import React from "react";
-import { Link } from "react-router-dom";
+import React from 'react';
+import { Link } from 'react-router-dom';
 
 function Navbar2() {
   return (
@@ -8,8 +8,8 @@ function Navbar2() {
         <h1 className="text-end">
           <Link to="#" className="hover:font-bold">
             Contact us
-          </Link>{" "}
-          |{" "}
+          </Link>{' '}
+          |{' '}
           <Link to="/access-account" className="hover:font-bold">
             Log in
           </Link>
