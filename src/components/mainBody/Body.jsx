@@ -9,7 +9,7 @@ function Body() {
   return (
     <>
       <Helmet>
-        <title>My Awesome Page Title</title>
+        {/* <title>My Awesome Page Title</title> */}
         <meta
           name="description"
           content="This is a description of my awesome page."
