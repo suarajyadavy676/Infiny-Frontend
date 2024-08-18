@@ -8,6 +8,7 @@ import AccessAccount from "../components/AccessAccount";
 import DashBoard from "./for-developrs/DashBoard";
 import DataStructure from "./for-developrs/data-structure/DataStructure";
 import Python from "./for-developrs/python/Python";
+import Page404 from "../components/Page404";
 
 function AllRoutes() {
   return (
@@ -27,6 +28,7 @@ function AllRoutes() {
         <Route path="/access-account" element={<AccessAccount/>}/>
         <Route path="/dashboard/data-structures" element={<DataStructure/>}/>
         <Route path="/dashboard/python" element={<Python/>}/>
+        <Route path="/*" element={<Page404/>}/>
       </Routes>
     </div>
   );
